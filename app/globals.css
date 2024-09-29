@@ -2,26 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.blog-content{
+    padding: 36px 0;
+}
+.blog-content b{   
+    font-weight: 500;
+    margin-bottom: 10px; /*supaya ada perenggan setiap bold text tag*/
+}
+.blog-content p{
+    margin-bottom: 10px;    /*supaya ada perenggan setiap p tag*/
+}
+.blog-content h1{
+    font-weight: 600;
+    font-size: 26px;
+     margin-bottom: 10px; /*supaya ada perenggan setiap h1 tag*/
+}
+.blog-content h2{
+    font-weight: 500;
+    font-size: 22px;
+     margin-bottom: 10px;   /*supaya ada perenggan setiap h2 tag*/
+}
+.blog-content h3{
+    font-weight: 500;
+    font-size: 18px;
+     margin-bottom: 10px;   /*supaya ada perenggan setiap h3 tag*/
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.scrollbar-hide::-webkit-scrollbar {
+   display: none;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.scrollbar-hide {
+   -ms-overflow-style:none; /*IE and Edge*/
+    scrollbar-width:none; /*non visible scrollbar*/
 }
