@@ -1,11 +1,13 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 'use client'
 import SubscriptionTableItem from '@/Components/AdminComponents/SubscriptionTableItem'
 import axios from 'axios'
-import React, { useState, useEffect } from 'react'
+import React, {  useState,useEffect } from 'react'
 import { toast } from 'react-toastify'
 
-const page = () => {
+const Page = () => {
 
+// eslint-disable-next-line react-hooks/rules-of-hooks
 const [data,setData] = useState([]);
 
 const fetchEmails = async () => {
@@ -68,4 +70,4 @@ fetchEmails();
   )
 }
 
-export default page
+export default Page

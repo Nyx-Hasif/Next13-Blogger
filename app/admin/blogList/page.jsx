@@ -4,7 +4,7 @@ import axios from 'axios';
 import React,{ useState,useEffect } from 'react'
 import { toast } from 'react-toastify';
 
-const page = () => {
+const Page = () => {
 
   const [blogs,setBlogs] = useState([])
 
@@ -59,4 +59,4 @@ fetchBlogs(); //refresh and update latest database
   );
 }
 
-export default page
+export default Page
