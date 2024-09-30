@@ -34,7 +34,7 @@ fetchBlogs(); //call in heree hehe
           <button onClick={()=>setMenu('Startup')}  className={ menu === 'Startup'?'bg-black text-white py-1 px-4 rounded-sm':''}>Startup</button>
           <button onClick={()=>setMenu('Lifestyle')}  className={ menu === 'Lifestyle'?'bg-black text-white py-1 px-4 rounded-sm':''}>Lifestyle</button>
       </div>
-      <div className='flex flex-col justify-around gap-1 gap-y-10 mb-16 sm:mx-24'>
+      <div className='flex flex-wrap justify-around gap-1 gap-y-10 mb-16 sm:mx-24'>
            {blogs.filter((item)=>menu === 'All'? true: menu === item.category).map((item,index)=>{
             return(
                 <BlogItem key={index} id={item._id} image={item.image} title={item.title} category={item.category} description={item.description}/>
