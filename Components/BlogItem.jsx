@@ -5,7 +5,7 @@ import React from 'react'
 
 const BlogItem = ({image,title,category,description,id}) => {
   return (
-    <div className='border border-black max-w-[330px] sm:max-w-[300px] bg-white hover:shadow-[-7px_7px_0px_#000000]  '>
+    <div className='border border-black max-w-[330px]  bg-white hover:shadow-[-7px_7px_0px_#000000]  '>
         <Link href={`/blogs/${id}`}>
           <Image src={image} alt='' width={400} height={400} className='border-b border-black'/>
         </Link>
