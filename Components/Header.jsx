@@ -28,7 +28,7 @@ const onSubmitHandler = async (e) => {
 }
 
   return (
-    <div className="py-5 px-5 md:px-12 lg:px-28 border border-black">
+    <div className="py-5 px-5 md:px-12 lg:px-28 ">
       <div className="flex justify-between items-center">
         <Image
           src={assets.logo}
