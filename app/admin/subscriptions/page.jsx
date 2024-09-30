@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/rules-of-hooks */
+
 'use client'
 import SubscriptionTableItem from '@/Components/AdminComponents/SubscriptionTableItem'
 import axios from 'axios'
