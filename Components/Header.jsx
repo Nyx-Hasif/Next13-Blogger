@@ -48,7 +48,7 @@ const onSubmitHandler = async (e) => {
         <p className='mt-10 max-w-[740px] m-auto text-xs sm:text-base'>Feel free to add your email and blog post to our newsletter! Dont forget to use the admin panel to add new blogs</p>
         <form onSubmit={onSubmitHandler} className=' border border-black flex  max-w-[500px] scale-75 sm:scale-100 mx-auto mt-10 shadow-[-7px_7px_0px_#000000]' action="">
           <input onChange={(e)=>setEmail(e.target.value)} value={email} type="email"  placeholder='Enter your email' className=' pl-4 border-r border-black '/>
-          <button type='submit' className='border-l border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white'>Subscribe</button>
+          <button type='submit' className='border-l border-black py-4 px-4 sm:px-4 active:bg-gray-600 active:text-white'>Subscribe</button>
         </form>
       </div>
     </div>
